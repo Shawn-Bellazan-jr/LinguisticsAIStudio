@@ -1,0 +1,12 @@
+[
+  {
+    "projectId": "project1",
+    "title": "Sentiment Analysis",
+    "description": "Analyzing customer reviews for sentiment."
+  },
+  {
+    "projectId": "project2",
+    "title": "Text Summarization",
+    "description": "Generating summaries of lengthy articles."
+  }
+]

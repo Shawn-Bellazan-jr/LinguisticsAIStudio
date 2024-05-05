@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34825.169
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinguisticsAIStudio.WebApp", "LinguisticsAIStudio.WebApp.csproj", "{70A29E29-17D2-4B6D-971B-4B32C1699113}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinguisticsAIStudio.WebApp", "LinguisticsAIStudio.WebApp.csproj", "{70A29E29-17D2-4B6D-971B-4B32C1699113}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinguisticsAIStudio.Documentation", "..\..\docs\LinguisticsAIStudio.Documentation\LinguisticsAIStudio.Documentation.csproj", "{F6195C98-95FF-402F-8EF6-101344F60652}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptDesign.Console", "..\PromptDesign.Console\PromptDesign.Console.csproj", "{11912391-3FD3-48EF-B05D-B2D14D0EFBBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptDesign.Source", "..\PromptDesign.Source\PromptDesign.Source.csproj", "{8E1406BD-812B-4C66-99E5-7F419F2495CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{70A29E29-17D2-4B6D-971B-4B32C1699113}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70A29E29-17D2-4B6D-971B-4B32C1699113}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70A29E29-17D2-4B6D-971B-4B32C1699113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6195C98-95FF-402F-8EF6-101344F60652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6195C98-95FF-402F-8EF6-101344F60652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6195C98-95FF-402F-8EF6-101344F60652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6195C98-95FF-402F-8EF6-101344F60652}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11912391-3FD3-48EF-B05D-B2D14D0EFBBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11912391-3FD3-48EF-B05D-B2D14D0EFBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11912391-3FD3-48EF-B05D-B2D14D0EFBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11912391-3FD3-48EF-B05D-B2D14D0EFBBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E1406BD-812B-4C66-99E5-7F419F2495CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E1406BD-812B-4C66-99E5-7F419F2495CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E1406BD-812B-4C66-99E5-7F419F2495CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E1406BD-812B-4C66-99E5-7F419F2495CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

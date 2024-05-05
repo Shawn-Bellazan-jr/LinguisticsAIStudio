@@ -1,0 +1,56 @@
+﻿@page "/projects"
+@using Newtonsoft.Json
+@using Refit
+@inject IProjectAPI _api;
+
+<PageTitle>Project</PageTitle>
+
+<h1>Projects</h1>
+
+<p>This component demonstrates fetching project data from the server.</p>
+
+@if (_projects == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var project in _projects)
+            {
+                <tr>
+                    <td>@project.Title</td>
+                    <td>@project.Description</td>
+                </tr>
+            }
+        </tbody>
+        <button class="btn btn-primary" @onclick="async () => await CreateProject()">New Project</button>
+    </table>
+}
+
+@code {
+    private List<Project> _projects;
+    private Project Project { get; set; } = new();
+
+    private Project SetProject() => new("Freeform Prompt", "Just testing somre freeform propmting");
+
+    protected override async Task OnInitializedAsync()
+    {
+        _projects = await _api.GetProjectsAsync();
+    }
+    public async Task CreateProject()
+    {
+        await _api.CreateProjectAsync(new ProjectDto("","",""));
+
+        StateHasChanged();
+    }
+
+
+}
